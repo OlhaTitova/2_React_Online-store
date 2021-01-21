@@ -18,7 +18,7 @@ class ProductList extends Component {
   }
 
   async componentDidMount() {
-    const response = await fetch('/cardProduct.json');
+    const response = await fetch('cardProduct.json');
     const result = await response.json();
     this.setState({ products: result });
   }
