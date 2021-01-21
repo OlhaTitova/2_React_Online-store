@@ -18,61 +18,61 @@ p {
     box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
     transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
     transition: box-shadow 0.2s ease-out;
+}
 
-    &:hover {
-        box-shadow: 2px 3px 7px 0px rgba(0, 0, 0, 0.24);
-    }
+.Card:hover {
+    box-shadow: 2px 3px 7px 0px rgba(0, 0, 0, 0.24);
+}
 
 
-    &__Name {
-        font-weight: 500;
-        font-size: 17px;
-    }
+.Card__Name {
+    font-weight: 500;
+    font-size: 17px;
+}
 
-    &__Img {
-        height: 150px;
-        transform: scale(0.95);
-        transition: transform 0.2s ease-out;
-        object-fit: cover;
-        width: 90%;
-        display: block;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
+.Card__Img {
+    height: 150px;
+    transform: scale(0.95);
+    transition: transform 0.2s ease-out;
+    object-fit: cover;
+    width: 90%;
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
-    &__Img:hover {
-        transform: scale(1);
-    }
+.Card__Img:hover {
+    transform: scale(1);
+}
 
-    &__Btn {
-        width: 23px;
-        height: 23px;
-        padding: 0;
-        display: inline-block;
-        background-color: #ffffff;
-        border: none;
-        outline: none;
-    }
+.Card__Btn {
+    width: 23px;
+    height: 23px;
+    padding: 0;
+    display: inline-block;
+    background-color: #ffffff;
+    border: none;
+    outline: none;
+}
 
-    &__Vendor {
-        font-size: 14px;
-        margin-right: 7px;
-        color: $bg-info;
-    }
+.Card__Vendor {
+    font-size: 14px;
+    margin-right: 7px;
+    color: $bgInfo;
+}
 
-    &__Color {
-        font-size: 14px;
-        margin-right: 7px;
-    }
+.Card__Color {
+    font-size: 14px;
+    margin-right: 7px;
+}
 
-    &__Price {
-        font-size: 21px;
-        font-weight: 700;
-        color: $bg-info;
-    }
+.Card__Price {
+    font-size: 21px;
+    font-weight: 700;
+    color: $bgInfo;
+}
 
-    &__Сurrency {
-        font-size: 10px;
-    }
+.Card__Сurrency {
+    font-size: 10px;
 }

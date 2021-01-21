@@ -2,7 +2,7 @@ import './App.scss';
 import ContainerMaxWidth from './components/ContainerMaxWidth/ContainerMaxWidth';
 import Menu from './components/Menu/Menu';
 import Header from './components/Header/Header';
-import ContainerRoot from './components/ContainerRoot/ContainerRoot';
+import CardBox from './components/CardBox/CardBox';
 
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
       <Header />
       <Menu />
       <ContainerMaxWidth />
-      <ContainerRoot />
+      <CardBox />
     </div>
   );
 }
