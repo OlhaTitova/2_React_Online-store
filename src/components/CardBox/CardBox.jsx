@@ -45,7 +45,7 @@ class CardBox extends Component {
             key={product.id}
             product={product}
             onAddToCart={() => this.setState({ modalProductId: product.id })}
-            onAddToFavorite={this.handleFavoriteAdd}
+            onAddToFavorite={() => this.handleFavoriteAdd(product.id)}
           />
         )}
 
