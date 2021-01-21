@@ -1,5 +1,7 @@
 # 2_React_Online-store
 
+**DEMO:** https://olhatitova.github.io/2_React_Online-store/build 
+
 Задание
 Создать страницу интернет-магазина.
 Для этого необходимо дополнить проект, созданный в предыдущем домашнем задании homework1.
