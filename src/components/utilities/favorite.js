@@ -1,16 +1,22 @@
 
-function addToFavorite(itemId) {
+export function addToFavorite(itemId) {
 
-    const favorite = JSON.parse(localStorage.getItem('favoriteList')) || {};
-    favorite[itemId] = itemId;
-    console.log(favorite);
+    const favorite = JSON.parse(localStorage.getItem('favoriteList')) || [];
+    let isSet = false;
 
-    if (favorite[itemId]) {
-        localStorage.removeItem('favoriteList', JSON.stringify(favorite))
+    if (favorite.indexOf(itemId) > -1) {
+        favorite.splice(favorite.indexOf(itemId), 1);
     } else {
-        localStorage.setItem('favoriteList', JSON.stringify(favorite))
+        favorite.push(itemId);
+        isSet = true;
     }
+    localStorage.setItem('favoriteList', JSON.stringify(favorite))
+
+    return isSet;
 }
 
+export function isFavorite(itemId) {
+    const favorite = JSON.parse(localStorage.getItem('favoriteList')) || [];
 
-export default addToFavorite;
+    return favorite.indexOf(itemId) > -1;
+}

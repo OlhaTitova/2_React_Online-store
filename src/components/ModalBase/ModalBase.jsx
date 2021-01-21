@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import Button from '../Button/Button';
 import './ModalBase.scss';
 
@@ -76,3 +77,17 @@ class ModalBase extends Component {
 }
 
 export default ModalBase;
+
+ModalBase.propTypes = {
+
+  header: PropTypes.string,
+  text: PropTypes.string,
+  textConfirm: PropTypes.string,
+  bgColorHeader: PropTypes.object,
+  bgColorBody: PropTypes.object,
+  bgColorFooter: PropTypes.object,
+  closeButton: PropTypes.bool,
+  bgInfo: PropTypes.string,
+  onClose: PropTypes.func,
+  onConfirm: PropTypes.func
+}

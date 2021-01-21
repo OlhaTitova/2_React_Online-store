@@ -5,12 +5,10 @@ import './Logo.scss';
 class Logo extends Component {
     render() {
         return (
-            <a href="/#" >
-                <img className="Logo"
-                    src="/img/logo.jpg"
-                    alt="Print on balls"
-                />
-            </a>
+            <img className="Logo"
+                src="/img/logo.jpg"
+                alt="Print on balls"
+            />
         )
     }
 }
