@@ -4,7 +4,7 @@ p {
     padding-top: 15px;
 }
 
-.Card {
+.Product {
     width: 287px;
     height: 346px;
     margin: 16px;
@@ -20,17 +20,17 @@ p {
     transition: box-shadow 0.2s ease-out;
 }
 
-.Card:hover {
+.Product:hover {
     box-shadow: 2px 3px 7px 0px rgba(0, 0, 0, 0.24);
 }
 
 
-.Card__Name {
+.Product__Name {
     font-weight: 500;
     font-size: 17px;
 }
 
-.Card__Img {
+.Product__Img {
     height: 150px;
     transform: scale(0.95);
     transition: transform 0.2s ease-out;
@@ -42,11 +42,11 @@ p {
     background-position: center;
 }
 
-.Card__Img:hover {
+.Product__Img:hover {
     transform: scale(1);
 }
 
-.Card__Btn {
+.Product__Btn {
     width: 23px;
     height: 23px;
     padding: 0;
@@ -56,23 +56,23 @@ p {
     outline: none;
 }
 
-.Card__Vendor {
+.Product__Vendor {
     font-size: 14px;
     margin-right: 7px;
     color: $bgInfo;
 }
 
-.Card__Color {
+.Product__Color {
     font-size: 14px;
     margin-right: 7px;
 }
 
-.Card__Price {
+.Product__Price {
     font-size: 21px;
     font-weight: 700;
     color: $bgInfo;
 }
 
-.Card__Сurrency {
+.Product__Сurrency {
     font-size: 10px;
 }

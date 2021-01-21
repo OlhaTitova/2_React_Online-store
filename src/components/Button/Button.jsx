@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import PropTypes from 'prop-types';
 import './Button.scss'
 
 
@@ -12,9 +13,16 @@ class Button extends Component {
                 onClick={onClick}
                 style={style}>
                 {text}
-            </button >
+            </ button >
         )
     }
 }
 
 export default Button;
+
+Button.propTypes = {
+    className: PropTypes.string,
+    onClick: PropTypes.func,
+    style: PropTypes.object,
+    text: PropTypes.string,
+}

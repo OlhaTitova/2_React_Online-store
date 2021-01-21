@@ -16,7 +16,7 @@ class FavoriteButton extends Component {
 
 		return (
 			<button
-				className="Favorite__Btn heart-full"
+				className="Favorite__Btn"
 				onClick={onClick}
 			>
 
