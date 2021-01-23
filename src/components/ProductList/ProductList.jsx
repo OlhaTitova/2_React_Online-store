@@ -39,7 +39,6 @@ class ProductList extends Component {
             key={product.id}
             product={product}
             onAddToCart={() => this.setState({ modalProductId: product.id })}
-          // onAddToFavorite={() => this.handleFavorite(product.id)}
           />;
         }
         )}

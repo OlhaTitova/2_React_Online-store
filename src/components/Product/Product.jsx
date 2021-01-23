@@ -17,7 +17,8 @@ class Product extends Component {
   }
 
   handleFavorite = (productId) => {
-    addToFavorite(productId) ? this.setState({ colorSVG: FULL_HEART }) : this.setState({ colorSVG: EMPTY_HEART })
+    addToFavorite(productId);
+    isFavorite(productId) ? this.setState({ colorSVG: FULL_HEART }) : this.setState({ colorSVG: EMPTY_HEART })
   }
 
   render() {
